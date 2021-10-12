@@ -10,8 +10,8 @@ const reader = readline.createInterface({
 reader.question("What would you like to calculate?", function(input){
 	tokens = input.split(' ');
 	
-	mathSymbol = tokens[1];
-	num1 = Number(tokens[0]);
+	mathSymbol = tokens[0];
+	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
 
 
@@ -35,7 +35,7 @@ reader.question("What would you like to calculate?", function(input){
 		console.log(num1 / num2);
 	}
 
-	if (mathSymbol === 'sqrt') {
+	if (mathSymbol === '√') {
 		console.log(Math.sqrt(num1));
 	}
 
